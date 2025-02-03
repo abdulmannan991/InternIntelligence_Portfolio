@@ -3,11 +3,9 @@ import React, { useEffect, useState } from 'react';
 import Head from 'next/head';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Image from 'next/image';
 import TypingEffect from 'react-typing-effect'; // Importing typing effect
 import SkillCard from '@/components/Skills';
 import Footer from '@/components/Footer';
-import { span } from 'framer-motion/client';
 import ProfileImage from '@/components/ProfileImage';
 import { motion } from 'framer-motion';
 
@@ -29,7 +27,7 @@ export default function Home() {
 
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const handleChange = (e: any) => {
+  const handleChange = (e:any ) => {
     const { name, value } = e.target;
     setForm({
       ...form,
@@ -98,7 +96,7 @@ export default function Home() {
 </div>
 </div>
           <h1 className="text-4xl font-bold md:text-5xl" data-aos="fade-up">
-            Hi, I'm <span className="text-[#f39c12]" style={{ display: "inline-block" }}><span className="typewriter-effect">Abdul Mannan Fazlani</span></span>
+            Hi, I am <span className="text-[#f39c12]" style={{ display: "inline-block" }}><span className="typewriter-effect">Abdul Mannan Fazlani</span></span>
           </h1>
           {/* Typewriter effect */}
           <div className="text-xl mt-4" data-aos="fade-up">
@@ -133,7 +131,7 @@ export default function Home() {
     transition={{ duration: 1, ease: "easeOut" }}
     whileHover={{ scale: 1.02 }}
   >
-    I'm a passionate <span className="text-[#f3c72c] font-semibold">Web Developer</span> with over <strong>5 years</strong> of experience building 
+    I am a passionate <span className="text-[#f3c72c] font-semibold">Web Developer</span> with over <strong>5 years</strong> of experience building 
     dynamic and interactive applications. My expertise lies in <span className="text-[#f3c72c]">JavaScript, React, Next.js, Tailwind CSS</span>, 
     and other modern technologies. I focus on crafting seamless user experiences while ensuring clean and efficient code.
   </motion.p>
